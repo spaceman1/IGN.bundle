@@ -1,0 +1,29 @@
+{
+	ign           : "IGN",
+	topVideos     : "Top Videos",
+	latestVideos  : "Latest Videos",
+	gameTrailers  : "Game Trailers",
+	movieTrailers : "Movie Trailers",
+	reviews       : "Reviews",
+	previews      : "Previews",
+	videoSeries   : "Video Series",
+	allSeries     : "All Video Series",
+	allEpisodes   : "All Episodes",
+	hitList       : "Hit List",
+	recentVideos  : "Recent Videos",
+	allVideos     : "All Videos",
+	insider       : "Insider Req'd",
+	
+	// Conversion from icon filename
+	"xbox360"     : "360",
+	xboxlive      : "Live",
+	ps3           : "PS3",
+	gear          : "Gear",
+	tv            : "TV",
+	wii           : "Wii",
+	pc            : "PC",
+	movies        : "Movies",
+	ds            : "DS",
+	wireless      : "Wireless",
+	stars         : "Stars"
+}
