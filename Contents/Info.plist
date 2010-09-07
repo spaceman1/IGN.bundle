@@ -16,8 +16,12 @@
 	<string>hook</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
+	<key>PlexAudioCodec</key>
+	<string>MP3</string>
 	<key>PlexClientPlatforms</key>
 	<string>MacOSX</string>
+	<key>PlexMediaContainer</key>
+	<string>FLV</string>
 	<key>PlexPluginDebug</key>
 	<string>1</string>
 	<key>PlexPluginMode</key>
@@ -26,5 +30,7 @@
 	<array>
 		<string>/video/ign</string>
 	</array>
+	<key>PlexVideoCodec</key>
+	<string>VP6F</string>
 </dict>
 </plist>
