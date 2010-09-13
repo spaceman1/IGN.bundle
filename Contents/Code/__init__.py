@@ -78,11 +78,15 @@ def CreateVideoItemFromPage(url, thumbUrl=None, desc="", title=None):
     title = videoPageXml.xpath('//h1')[0].text
   
   # Parse JavaScript which contains direct URL to Flash video
-  rawSrc = videoPageXml.xpath('//script/text()')[1]
-  begin = rawSrc.find("hiResFlash = '") + 14 # TODO Add option for low/hi res here
-  end = rawSrc.find(".flv';") + 4
-  end += rawSrc[end:].find(".flv") + 4
-  flv = "http://" + rawSrc[begin:end]
+  flv = ""
+  all = videoPageXml.xpath('//script/text()')#[2]
+  for rawSrc in all:
+    begin = rawSrc.find("hiResFlash = '") # TODO Add option for low/hi res here
+    if begin > 0:
+      rawSrc = rawSrc[begin + 14:]
+      end = rawSrc.find(".flv';") + 4
+      flv = "http://" + rawSrc[:end]
+      break
   
   # Might be Insider content
   if url.find("insider.ign.com") >= 0:
